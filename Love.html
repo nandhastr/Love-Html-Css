@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            margin-left: 50%;
+
+            position: absolute;
+        }
+
+        .hati1 {
+            margin: auto;
+            background-color: red;
+            height: 200px;
+            width: 200px;
+            border-top: 100px solid red;
+            border-radius: 100px 100px 0 0;
+            position: inherit;
+        }
+
+        .hati2 {
+            margin: auto;
+            margin-left: 100px;
+            background-color: red;
+            height: 200px;
+            width: 200px;
+            border-top: 100px solid red;
+            border-radius: 100px 100px 0 0;
+            position: inherit;
+        }
+
+        .hati1 {
+            transform: rotate(-45deg);
+        }
+
+        .hati2 {
+            margin-left: 70px;
+            transform: rotate(45deg);
+        }
+        .hati {
+            position: absolute;
+        }
+
+        .hati:hover {
+            margin-right: 100px;
+            cursor: pointer;
+            /* transform: scale(2.5); */
+            /* transform: scaleY(2); */
+            transform: scale3d(0, 0, 0);
+            transition: 1.5s;
+        }
+    </style>
+
+    <body>
+        <div class="container">
+            <div class="hati">
+                <div class="hati1"></div>
+                <div class="hati2"></div>
+            </div>
+        </div>
+    </body>
+</html>
